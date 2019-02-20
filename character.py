@@ -15,7 +15,7 @@ class Character():
         self.name = new_name
         self.avatar = new_avatar
         self.inventory = []
-        
+
 # `someone=None` is a default argument
 # `None` is equivalent to `null` in other languages
 
@@ -28,3 +28,10 @@ class Character():
             return "Hello, %s, I am %s. I am awesome." % (someone.name, self.name,)
         else:
             return "Hello, I am %s. I am awesome." % (self.name,)
+
+# Hero is a kind of Character
+# Hero is a subclass of Character
+# Hero inherits fron Character
+# Hero is the super class of Hero
+class Hero(Character):
+    pass
